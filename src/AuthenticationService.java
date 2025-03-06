@@ -3,10 +3,8 @@ import java.util.ArrayList;
 public class AuthenticationService implements IAuthenticationService {
     private ArrayList<User> users;
 
-    public AuthenticationService() {
-        users = new ArrayList<>();
-        // Add a default user
-        users.add(new User("guest", "guest"));
+    public AuthenticationService(ArrayList<User> users) {
+        this.users = users;
     }
 
     /**
